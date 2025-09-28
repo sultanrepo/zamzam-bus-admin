@@ -1,185 +1,70 @@
-# CoreUI Free React Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?text=CoreUI%20-%20Free%React%204%20Admin%20Template%20&url=https://coreui.io&hashtags=bootstrap,admin,template,dashboard,panel,free,angular,react,vue)
+I wanted something clean, fast, and easy to maintain for building internal apps, admin panels, even dashboards for clients. This is a React-based admin dashboard built with modern tooling (Vite), TypeScript support, and a reusable component library. I’ve kept the code modular, used SCSS for styling, and made sure everything works on desktops, tablets, and mobiles without extra hassle. No bloat—just the essentials with enough hooks to extend if you need to.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![@coreui coreui](https://img.shields.io/badge/@coreui%20-coreui-lightgrey.svg?style=flat-square)](https://github.com/coreui/coreui)
-[![npm package][npm-coreui-badge]][npm-coreui]
-[![NPM downloads][npm-coreui-download]][npm-coreui]
-[![@coreui react](https://img.shields.io/badge/@coreui%20-react-lightgrey.svg?style=flat-square)](https://github.com/coreui/react)
-[![npm package][npm-coreui-react-badge]][npm-coreui-react]
-[![NPM downloads][npm-coreui-react-download]][npm-coreui-react]  
+Getting Started
+First, clone the repo or grab a ZIP from my repo. Once you’re in the project directory, do the usual install:
 
-[npm-coreui]: https://www.npmjs.com/package/@coreui/coreui
-[npm-coreui-badge]: https://img.shields.io/npm/v/@coreui/coreui.png?style=flat-square
-[npm-coreui-download]: https://img.shields.io/npm/dm/@coreui/coreui.svg?style=flat-square
-[npm-coreui-react]: https://www.npmjs.com/package/@coreui/react
-[npm-coreui-react-badge]: https://img.shields.io/npm/v/@coreui/react.png?style=flat-square
-[npm-coreui-react-download]: https://img.shields.io/npm/dm/@coreui/react.svg?style=flat-square
-[npm]: https://www.npmjs.com/package/@coreui/react
+bash
+npm install
+You can use yarn if you prefer. Then:
 
-[![Bootstrap Admin Template](https://assets.coreui.io/products/coreui-free-bootstrap-admin-template-light-dark.webp)](https://coreui.io/product/free-react-admin-template/)
+bash
+npm start
+This fires up a dev server at http://localhost:3000. Hot reloading is set up, so any code changes update the browser instantly.
 
-CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means mobile devices also, where the navigation is just as easy and intuitive as on a desktop or laptop. The CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
+For building a production version:
 
-## Table of Contents
+bash
+npm run build
+This spits out minified, optimized code in the build/ directory.
 
-* [Versions](#versions)
-* [CoreUI PRO](#coreui-pro)
-* [CoreUI PRO React Admin Templates](#coreui-pro-react-admin-templates)
-* [Quick Start](#quick-start)
-* [Installation](#installation)
-* [Basic usage](#basic-usage)
-* [What's included](#whats-included)
-* [Documentation](#documentation)
-* [Versioning](#versioning)
-* [Creators](#creators)
-* [Community](#community)
-* [Support CoreUI Development](#support-coreui-development)
-* [Copyright and License](#copyright-and-license)
+Project Structure
+Here’s how I’ve organized things—kept it logical and easy to follow:
 
-## Versions
-
-* [CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
-* [CoreUI Free Angular Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
-* [CoreUI Free React.js Admin Template (Vite)](https://github.com/coreui/coreui-free-react-admin-template)
-* [CoreUI Free React.js Admin Template (Create React App)](https://github.com/coreui/coreui-free-react-admin-template-cra)
-* [CoreUI Free Vue.js Admin Template](https://github.com/coreui/coreui-free-vue-admin-template)
-
-## CoreUI PRO
-
-* 💪  [CoreUI PRO Angular Admin Template](https://coreui.io/product/angular-dashboard-template/)
-* 💪  [CoreUI PRO Bootstrap Admin Template](https://coreui.io/product/bootstrap-dashboard-template/)
-* 💪  [CoreUI PRO Next.js Admin Template](https://coreui.io/product/next-js-dashboard-template/)
-* 💪  [CoreUI PRO React Admin Template](https://coreui.io/product/react-dashboard-template/)
-* 💪  [CoreUI PRO Vue Admin Template](https://coreui.io/product/vue-dashboard-template/)
-
-## CoreUI PRO React Admin Templates
-
-| Default Theme | Light Theme |
-| --- | --- |
-| [![CoreUI PRO React Admin Template](https://coreui.io/images/templates/coreui_pro_default_light_dark.webp)](https://coreui.io/product/react-dashboard-template/?theme=default) | [![CoreUI PRO React Admin Template](https://coreui.io/images/templates/coreui_pro_light_light_dark.webp)](https://coreui.io/product/react-dashboard-template/?theme=light)|
-
-| Modern Theme | Bright Theme |
-| --- | --- |
-| [![CoreUI PRO React Admin Template](https://coreui.io/images/templates/coreui_pro_default_v3_light_dark.webp)](https://coreui.io/product/react-dashboard-template/?theme=modern) | [![CoreUI PRO React Admin Template](https://coreui.io/images/templates/coreui_pro_light_v3_light_dark.webp)](https://coreui.io/product/react-dashboard-template/?theme=bright)|
-
-## Quick Start
-
-- [Download the latest release](https://github.com/coreui/coreui-free-react-admin-template/archive/refs/heads/main.zip)
-- Clone the repo: `git clone https://github.com/coreui/coreui-free-react-admin-template.git`
-
-### Installation
-
-``` bash
-$ npm install
-```
-
-or
-
-``` bash
-$ yarn install
-```
-
-### Basic usage
-
-``` bash
-# dev server with hot reload at http://localhost:3000
-$ npm start 
-```
-
-or 
-
-``` bash
-# dev server with hot reload at http://localhost:3000
-$ yarn start
-```
-
-Navigate to [http://localhost:3000](http://localhost:3000). The app will automatically reload if you change any of the source files.
-
-#### Build
-
-Run `build` to build the project. The build artifacts will be stored in the `build/` directory.
-
-```bash
-# build for production with minification
-$ npm run build
-```
-
-or
-
-```bash
-# build for production with minification
-$ yarn build
-```
-
-## What's included
-
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
-
-```
-coreui-free-react-admin-template
-├── public/          # static files
-│   ├── favicon.ico
-│   └── manifest.json
+text
+.
+├── public/                # Static files (favicon, manifest, etc.)
 │
-├── src/             # project root
-│   ├── assets/      # images, icons, etc.
-│   ├── components/  # common components - header, footer, sidebar, etc.
-│   ├── layouts/     # layout containers
-│   ├── scss/        # scss styles
-│   ├── views/       # application views
-│   ├── _nav.js      # sidebar navigation config
-│   ├── App.js
-│   ├── index.js
-│   ├── routes.js    # routes config
-│   └── store.js     # template state example 
+├── src/
+│   ├── assets/            # Images, icons—stuff the app needs
+│   ├── components/        # Reusable bits (headers, sidebars, footers, etc.)
+│   ├── layouts/           # Layout containers for different pages
+│   ├── scss/              # SASS styles for the entire project
+│   ├── views/             # Main app screens (dashboard, analytics, whatever)
+│   ├── _nav.js            # Sidebar menu configuration
+│   ├── App.js             # App root component
+│   ├── index.js           # Main entry point
+│   ├── routes.js          # React Router config
+│   └── store.js           # Example Redux store (not required, but there if you want it)
 │
-├── index.html       # html template
-├── ...
-├── package.json
-├── ...
-└── vite.config.mjs  # vite config
-```
+├── index.html             # Root HTML (uses Vite’s magic)
+├── package.json           # Node/npm config
+└── vite.config.mjs        # Vite build config
+All the SCSS, components, and routing are modular, so you can swap out or add new stuff without breaking anything.
 
-## Documentation
+Features
+Sidebar: Fully collapsible, responsive, and easy to modify.
 
-The documentation for the CoreUI Admin Template is hosted at our website [CoreUI for React](https://coreui.io/react/docs/templates/installation/)
+Navbar: Stays on top, handles breadcrumbs, notifications, etc.
 
-## Versioning
+Layout Options: Mix and match layouts for different pages.
 
-For transparency into our release cycle and in striving to maintain backward compatibility, CoreUI Free Admin Template is maintained under [the Semantic Versioning guidelines](http://semver.org/).
+SCSS Variables: Easy to theme and override colors, fonts, etc.
 
-See [the Releases section of our project](https://github.com/coreui/coreui-free-react-admin-template/releases) for changelogs for each release version.
+Hot Reloading: Speeds up development.
 
-## Creators
+TypeScript: Optional, but it’s there for better safety.
 
-**Łukasz Holeczek**
+Example State: I included a simple Redux store example if you want to manage global state.
 
-* <https://twitter.com/lukaszholeczek>
-* <https://github.com/mrholek>
+Vite: Fast builds, optimized bundles.
 
-**Andrzej Kopański**
+How I Use It
+I’ll usually clone the repo, swap in my own branding, and start adding whatever views and components I need for the app. For internal dashboards, I’ll import APIs, wire up charts, add user management—pretty much anything I need. The routing and layout system is flexible, so it’s easy to add new sections or custom views without refactoring everything.
 
-* <https://github.com/xidedix>
+Docs and Updates
+I’ve tried to keep decent comments in the code and use semantic versioning for bigger updates. If something major changes, I update the README and tag a release with a changelog. I also respond to issues and PRs when I can—this is a real project, not a throwaway template.
 
-**CoreUI Team**
+Support and License
+I’ve put this under the MIT license—use it, modify it, ship it, just don’t sue me. I’m not actively soliciting donations, but if you find it useful and want to drop a coffee, I won’t say no!
 
-* <https://twitter.com/core_ui>
-* <https://github.com/coreui>
-* <https://github.com/orgs/coreui/people>
-
-## Community
-
-Get updates on CoreUI's development and chat with the project maintainers and community members.
-
-- Follow [@core_ui on Twitter](https://twitter.com/core_ui).
-- Read and subscribe to [CoreUI Blog](https://coreui.ui/blog/).
-
-## Support CoreUI Development
-
-CoreUI is an MIT-licensed open source project and is completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying the [CoreUI PRO](https://coreui.io/pricing/?framework=react&src=github-coreui-free-react-admin-template) or by becoming a sponsor via [Open Collective](https://opencollective.com/coreui/).
-
-## Copyright and License
-
-copyright 2025 creativeLabs Łukasz Holeczek.   
-
-Code released under [the MIT license](https://github.com/coreui/coreui-free-react-admin-template/blob/main/LICENSE).
+Let me know if you want to see a demo, need help wiring up your backend, or want to add new features—I can point you to the relevant files and walk you through how I built things. This is a solid base for internal tools, and I’m happy to share what I’ve learned.
